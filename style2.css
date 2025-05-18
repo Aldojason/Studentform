@@ -1,0 +1,36 @@
+h1{
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(99, 60, 42);
+    display: inline-flex;
+    margin-left: 530px;
+    border-radius: 10px;
+    color: beige;
+}
+form{
+    margin-left: 540px;
+    margin-top: 50px;
+    
+}
+table{
+    border-width: 7px;
+    border-radius: 10px;
+    border-style:solid;
+}
+.one{
+    margin-left: 425px;
+    margin-top: 40px;
+}
+body{
+    background-color: rgb(207, 202, 214);
+}
+.save{
+    padding: 2px;
+    width: 200px;
+    color: white;
+    background-color: rgb(51, 36, 17);
+    
+}
+button{
+    background-color: red ;
+}
