@@ -6,7 +6,7 @@ This is a simple, responsive Student Form web application built using **HTML**, 
 
 ## 🌐 Live Preview
 
-> _([CLICK TO VIEW](https://aldojason.github.io/Studentform/))_
+> _([click now](https://aldojason.github.io/Studentform/))_
 
 ---
 
