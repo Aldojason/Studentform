@@ -1,63 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>formdemo</title>
-    <link rel="stylesheet" href="style2.css">
-    <script src="demo.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Form</title>
+  <link rel="stylesheet" href="style2.css" />
+  <script src="demo.js" defer></script>
 </head>
-
 <body>
-    <h1>STUDENT FORM</h1>
+  <div class="container">
+    <h1>Student Form</h1>
+
     <form id="form">
-        <table  border="1">
-            <tr>
-                <td>NAME</td>
-                <td><input id="inputname" type="text" placeholder="enter your name" ></td>
-            </tr>
-            <tr>
-                <td>AGE</td>
-                <td><input id="age" type="number" placeholder="enter your age"></td>
+      <div class="form-grid">
+        <label>
+          Name
+          <input id="inputname" type="text" placeholder="Enter your name" required />
+        </label>
 
-            </tr>
-            <tr>
-                <td>GENDER</td>
-                <td><input class="gen" value="male" type="radio" name="gender">male<input class="gen" value="female" type="radio" name="gender">female</td>
-            </tr>
-            <tr>
-                <td>COURSE</td>
-                <td>
-                    <select id="course">
-                        <option>javascript</option>
-                        <option>python</option>
-                        <option>java</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td>EMAIL</td>
-                <td><input id="mail" type="email"></td>
-            </tr>
-           <tr><td colspan="2" style="text-align:center;"><button onclick="addelement(event)" class="save" type="submit">save</button></td></tr>
-        </table>
+        <label>
+          Age
+          <input id="age" type="number" placeholder="Enter your age" required />
+        </label>
 
+        <label>
+          Gender
+          <div class="gender">
+            <label><input class="gen" type="radio" name="gender" value="male" required /> Male</label>
+            <label><input class="gen" type="radio" name="gender" value="female" /> Female</label>
+          </div>
+        </label>
+
+        <label>
+          Course
+          <select id="course">
+            <option>JavaScript</option>
+            <option>Python</option>
+            <option>Java</option>
+          </select>
+        </label>
+
+        <label>
+          Email
+          <input id="mail" type="email" placeholder="Enter your email" required />
+        </label>
+      </div>
+
+      <button onclick="addelement(event)" class="save" type="submit">Save</button>
     </form>
-    <table  class="one" border="1">
-        <tr>
-            <td>NAME</td><td>AGE</td><td>GENDER</td><td>COURSE</td><td>EMAIL</td>
-<td>ACTION</td>
-        </tr>
-        <tr >
-            <td>Jason</td><td>19</td><td>male</td><td>javascript</td><td>aldojason07@gmail.com</td><td><button onclick="changeRow(event)">delete</button></td>
-        </tr>
-        <tr>
-            <td>Aldo</td><td>21</td><td>male</td><td>python</td><td>jasonchrist07@gmail.com</td><td><button onclick="changeRow(event)">delete</button></td>
-        </tr>
-    
 
-    </table>
+    <div class="table-container">
+      <table class="one">
+        <thead>
+          <tr>
+            <th>Name</th><th>Age</th><th>Gender</th><th>Course</th><th>Email</th><th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Jason</td><td>19</td><td>Male</td><td>JavaScript</td><td>aldojason07@gmail.com</td>
+            <td><button onclick="changeRow(event)">Delete</button></td>
+          </tr>
+          <tr>
+            <td>Aldo</td><td>21</td><td>Male</td><td>Python</td><td>jasonchrist07@gmail.com</td>
+            <td><button onclick="changeRow(event)">Delete</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
 </body>
-
 </html>
